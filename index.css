@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Kumbh Sans';
+    font-weight: normal;
+    color: #e6e6e6;
+}
+
+.summary {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+.summary-spacer {
+    width: 60%;
+}
+
+#god-of-war-2018 {
+    background-image: url(/assets/home/god-of-war-cover.jpg);
+}
+
+#god-of-war-ragnarok {
+    background-image: url(/assets/home/god-of-war-ragnarok-cover.jpg);
+}
+
+.summary-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 650px;
+    width: 100%;
+    filter: drop-shadow(0 0 15px black);
+}
+
+.summary-content {
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.summary-logo img {
+    width: 100%;
+    max-width: 600px;
+    padding: 1.5rem;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.summary-text {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 0 0 12px black;
+}
+
+.overview-wrapper {
+    width: 100%;
+    max-width: 1800px;
+    width: min-content;
+    padding-bottom: 2.5rem;
+    margin: 0 auto;
+}
+
+.overview-grid {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.overview-heading {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-family: 'Cinzel', 'Segoe UI';
+    padding: 3rem 0;
+}
+
+.overview-content {
+    text-align: center;
+    max-width: min-content;
+    padding: 1rem 2rem;
+    padding-bottom: 3rem;
+}
+
+.overview-gallery {
+    position: relative;
+    overflow: hidden;
+}
+
+.overview-gallery img {
+    width: 500px;
+    height: auto;
+    display: none;
+    align-items: center;
+    border-radius: 8px;
+}
+
+img.showSlide {
+    display: block;
+}
+
+.overview-text h5 {
+    font-size: 20px;
+    font-family: 'Montserrat', serif;
+    padding: 10px;
+}
+
+.overview-text p {
+    font-size: 15px;
+    padding: 5px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-width: 0;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.4s ease-in;
+    user-select: none;
+    z-index: 1;
+}
+
+.prev:hover, .next:hover {
+    background-color: white;
+    color: black;
+}
+
+.prev {
+    left: 2%;
+}
+
+.next {
+    right: 2%;
+}
+
+@media screen and (max-width: 1142px) {
+    .summary-content-wrapper {
+        max-width: 450px;
+    }
+
+    .summary-logo img {
+        height: auto;
+        margin-bottom: 0;
+    }
+    
+    .summary-text {
+        font-size: 25px;
+        text-align: center;
+        text-shadow: 0 0 12px black;
+    }
+
+    .overview-grid {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .overview-gallery img {
+        width: 400px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 942px) {
+    .summary-content-wrapper {
+        max-width: 350px;
+    }
+
+    .summary-text {
+        font-size: 1.4rem;
+    }
+
+    .overview-gallery img {
+        width: 350px;
+        height: auto;
+    }
+
+    .overview-text p {
+        font-size: 12px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 843px) {
+    .summary-text {
+        font-size: 1.2rem;
+    }
+
+    .overview-gallery img {
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 742px) {
+    .overview-heading {
+        font-size: 25px;
+        padding: 2rem 0;
+    }
+
+    .overview-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .overview-content {
+        margin-bottom: 1.3rem;
+        padding-bottom: 1.8rem;
+    }
+
+    .overview-gallery img {
+        width: 400px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 474px) {
+    .summary-logo img {
+        padding: 0.6rem;
+    }
+
+    #god-of-war-2018 {
+        background-image: url(/assets/home/god-of-war-cover-alt.jpg);
+    }
+    
+    #god-of-war-ragnarok {
+        background-image: url(/assets/home/god-of-war-ragnarok-cover-alt.jpg);
+    }
+    
+    .summary-spacer {
+        width: 0%;
+    }
+
+    .overview-gallery img {
+        width: 350px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .summary-text {
+        font-size: 1.1rem;
+    }
+
+    .overview-gallery img {
+        width: 300px;
+        height: auto;
+    }
+
+    .overview-text h5 {
+        font-size: 15px;
+        padding: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 365px) {
+    .overview-heading {
+        font-size: 18px;
+        padding: 1.6rem 0;
+    }
+
+    .summary-text {
+        font-size: 0.9rem;
+    }
+
+    .overview-gallery img {
+        width: 250px;
+        height: auto;
+    }
+}

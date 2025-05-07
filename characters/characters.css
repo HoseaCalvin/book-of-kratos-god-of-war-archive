@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.characters-content {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/characters/sindri-house.jpg);
+    padding: 7rem 0;
+    position: relative;
+}
+
+.characters-box {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.character {
+    width: auto;
+    height: auto;
+    min-width: fit-content;
+    margin: 0 30px;
+    overflow: hidden; 
+    filter: brightness(60%);
+    transition: all 0.45s ease-in-out;
+}
+
+.character-title h5 {
+    font-family: 'Cinzel';
+    font-size: 45px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.character-photo img {
+    height: 25rem;
+    width: auto;
+    padding: 0 1rem;
+    margin: 0;
+}
+
+.character:hover {
+    filter: brightness(100%);
+}
+
+.character-name h6 {
+    font-family: 'Montserrat', serif;
+    font-size: 25px;
+    color: rgb(246, 246, 246);
+    text-align: center;
+    padding: 10px;
+}
+
+.prev, .next {
+    position: absolute;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 3rem;
+    padding: 1rem 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.35s ease-in-out;
+    z-index: 1;
+}
+
+.next:hover, .prev:hover {
+    color: rgb(177, 177, 177);
+}
+
+.prev {
+    left: 2%;
+}
+
+.next {
+    right: 2%
+}
+
+@media screen and (max-width: 770px) {
+    .characters-content {
+        padding: 4rem 0;
+    }
+
+    .character-photo img {
+        height: 18rem;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .character-photo img {
+        height: 16rem;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .characters-content {
+        padding: 2.5rem 0;
+    }
+    
+    .character-photo img {
+        height: 14rem;
+        width: auto;
+    }
+
+    .character-name h6 {
+        font-size: 18px;
+    }
+}

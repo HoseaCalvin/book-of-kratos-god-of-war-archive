@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>God of War: The Norse Saga</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo/tab-logo.png"/>
+    <link rel="stylesheet" href="/realms/realm-article.css">
+</head>
+<body>
+    <div id="header"></div>
+    <script src="/header/header.js"></script>
+
+    <div class="realm-background" id="midgard-background">
+        <div class="realm-header">
+            <div class="realm-logo">
+                <img src="/assets/realms/runes/midgard-rune.png" alt="Midgard Rune" loading="eager">
+            </div>
+            <div class="realm-name">
+                <h1>Midgard</h1>
+                <h2>Realm of the Humans</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="first-content">
+        <div class="overview-photo" id="midgard-overview">
+            <div class="overview-content">
+                <div class="overview-title">
+                    <h2>The Center of the Nine Realms</h2>
+                </div>
+                <hr>
+                <div class="overview-button">
+                    <button onclick="showPassage()">Learn More</button>
+                </div>
+                <div class="overview-text">
+                    <p id="text">
+                        Revered by a number of individuals as Earth, Midgard stands at the center of the Nine Realms. <br>
+                        Abundant with biomes, resources, and seasons, it is an unrivaled paradise fit for survival and hosting events.
+                        Hence, the Aesir have been present for millennia, seeking to maintain ordinance amongst the mortals.
+                        However, Odin, the ruler of Asgard, has provided protection over the powerless by sending Jormungandr, known as Midgard's serpent and protector.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="line-separator">
+
+    <div class="location-header">
+        <h3>Major Regions</h3>
+    </div>
+
+    <div class="tab-buttons-wrapper">
+        <div class="tab">
+            <button class="tab-button" onclick="openGameTab(event, 'gow')">God of War (2018)</button>
+            <button class="tab-button" onclick="openGameTab(event, 'gowr')">God of War Ragnarök (2022)</button>
+        </div>
+    </div>
+    <div class="tab-content-wrapper">
+        <div class="tab-content" id="gow">
+            <div class="location">
+                <div class="location-name">
+                    <h4>Wildwoods</h4>
+                </div>
+                <div class="location-content">
+                    <div class="location-photo">
+                        <img src="/assets/realms/midgard/wildwoods.jpg" alt="Wildwoods" loading="lazy">
+                    </div>
+                    <div class="location-description">
+                        <p>
+                            Within the deep forests and gigantic rocks stands Kratos' new hut, encircled by a magical stave.
+                            Abounding with spruce woods and animals, they are a leverage for Kratos and Atreus in channeling their might.
+                            Nearby also stands a river, a natural altar for their soul or a tranquil spot to reflect upon their journeys.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="location">
+                <div class="location-name">
+                    <h4>River Pass</h4>
+                </div>
+                <div class="location-content">
+                    <div class="location-photo">
+                        <img src="/assets/realms/midgard/river-pass.jpg" alt="River Pass" loading="lazy">
+                    </div>
+                    <div class="location-description">
+                        <p>
+                            A crucible from the nature in the form of mazes, puzzles, deep burrows, and steep climbs.
+                            An adventurer's true audacity will unravel the moment their embark through here commences.
+                            Those who are lucky may find outstanding rewards, an honor for their unparalleled mettle.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="location">
+                <div class="location-name">
+                    <h4>Lake of Nine</h4>
+                </div>
+                <div class="location-content">
+                    <div class="location-photo">
+                        <img src="/assets/realms/midgard/lake-of-nine.jpg" alt="Lake of Nine" loading="lazy">
+                    </div>
+                    <div class="location-description">
+                        <p>
+                            A vast lake surrounded by mysterious islands, verdant prairies, and mountain ranges covered in thick clouds.
+                            At its center stands a revered temple by all Norse races named Týr's Temple, encircled by eight realm towers.
+                            On the other hand, the islands speak of many things, one of which is the dead whose wishes are not yet fulfilled. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="location">
+                <div class="location-name">
+                    <h4>Foothills</h4>
+                </div>
+                <div class="location-content">
+                    <div class="location-photo">
+                        <img src="/assets/realms/midgard/foothills.jpg" alt="Foothills" loading="lazy">
+                    </div>
+                    <div class="location-description">
+                        <p>
+                            Those who have a plea to behold Midgard's splendor must embark on a perilous path.
+                            Demanding tremendous will, the journey to the zenith is full of life-threatening obstacles.
+                            Without one's fiery spirit, a sendoff to Helheim will certainly occur.   
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="location">
+                <div class="location-name">
+                    <h4>The Mountain</h4>
+                </div>
+                <div class="location-content">
+                    <div class="location-photo">
+                        <img src="/assets/realms/midgard/the-mountain.jpg" alt="The Mountain" loading="lazy">
+                    </div>
+                    <div class="location-description">
+                        <p>
+                            On its zenith stands a view worth remembering, a view Midgard's splendor.
+                            Another form nature's grace, only bestowed upon the deserving.
+                            However, in certain occasions, its comforting wind becomes frozen and transformed into unyielding blizzard.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="location">
+                <div class="location-name">
+                    <h4>Thamur's Corpse</h4>
+                </div>
+                <div class="location-content">
+                    <div class="location-photo">
+                        <img src="/assets/realms/midgard/thamur-corpse.png" alt="Thamur's Corpse" loading="lazy">
+                    </div>
+                    <div class="location-description">
+                        <p>
+                            A worshipped stonemason of the Jötnar, now dead lying on snow plains.
+                            Having had a deep care for his race, Thamur built a bastion around Jötunheim during the Aesir genocide.
+                            Unfortunately, his actions later attracted Thor, whom he subsequently battled until his last drop of blood.
+                            His falling corpse murdered an entire village, and his last breath freezing the grounds.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="location">
+                <div class="location-name">
+                    <h4>Veithurgard</h4>
+                </div>
+                <div class="location-content">
+                    <div class="location-photo">
+                        <img src="/assets/realms/midgard/veithurgard.jpg" alt="Veithurgard" loading="lazy">
+                    </div>
+                    <div class="location-description">
+                        <p>
+                            Once a kingdom under the authority of a dwarf, Veithurgard is now forsaken and ravaged by Seiðr monsters.
+                            Scrolls and folktowns have unveiled horror secrets of its occupants, all over greed and tyranny.
+                            However, the living in Veithurgard were thriving farmers who had reaped lots of food resources.
+                            They lived happily to see the sun and the moon on a prosperous land.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="location">
+                <div class="location-name">
+                    <h4>Konùnsgard</h4>
+                </div>
+                <div class="location-content">
+                    <div class="location-photo">
+                        <img src="/assets/realms/midgard/konunsgard.jpg" alt="Konùnsgard" loading="lazy">
+                    </div>
+                    <div class="location-description">
+                        <p>
+                            Having faced similar fate like Veithurgard, Konùnsgard was another region led by the same dwarf.
+                            A shelter for a dragon, taking many winters, was constructed for a single goal.
+                            Again, terrible rumors about Konùnsgard's residents spread wide, with only selected individuals knowing the full truth.
+                            Once was a prosperous land, now a wasteland as a result of greed.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-content-wrapper">
+        <div class="tab-content" id="gowr">
+            <div class="location">
+                <div class="location-name">
+                    <h4>Lower Wildwoods</h4>
+                </div>
+                <div class="location-content">
+                    <div class="location-photo">
+                        <img src="/assets/realms/midgard/lower-wildwoods.jpg" alt="Lower Wildwoods" loading="lazy">
+                    </div>
+                    <div class="location-description">
+                        <p>
+                            In the wake of Fimbulwinter, nature falls ill, its warmth now an eternal blizzard.
+                            The living now face harsher conditions as law does not rule anymore in Midgard.
+                            Undead warriors and monsters have awakened, with all magics now dissipating.
+                            In the end, it is a matter of time before doom befalls upon the living.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="location">
+                <div class="location-name">
+                    <h4>Upper Wildwoods</h4>
+                </div>
+                <div class="location-content">
+                    <div class="location-photo">
+                        <img src="/assets/realms/midgard/upper-wildwoods.jpg" alt="Upper Wildwoods" loading="lazy">
+                    </div>
+                    <div class="location-description">
+                        <p>
+                            Near Lower Wildwoods is an elevated, rugged ground called Upper Wildwoods.
+                            Since Fimbulwinter, no singing or humming are heard, signifying the absence of the living.
+                            Standing on the snowy surface are now the remnants of the dead or damaged structures.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="location">
+                <div class="location-name">
+                    <h4>Lake of Nine</h4>
+                </div>
+                <div class="location-content">
+                    <div class="location-photo">
+                        <img src="/assets/realms/midgard/lake-of-nine-fimbulwinter.jpg" alt="Lake of Nine" loading="lazy">
+                    </div>
+                    <div class="location-description">
+                        <p>
+                            Lake of Nine, once a magnificent lake under the luminous sunlight, now a thin icy floor shrouded in snowstorms.
+                            Its grand temple, Týr's Temple, loses its significance and becomes a legacy of the bygone.
+                            Additionally, some individuals have gone rogue and settled in its vicinity, as a means to survive.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="location">
+                <div class="location-name">
+                    <h4>Shores of Nine</h4>
+                </div>
+                <div class="location-content">
+                    <div class="location-photo">
+                        <img src="/assets/realms/midgard/shores-of-nine.jpg" alt="Shores of Nne" loading="lazy">
+                    </div>
+                    <div class="location-description">
+                        <p>
+                            Bordering Lake of Nine, Shores of Nine is home to The Realm Towers, ancient structures, and other minor settlements.
+                            The signs of past lives can be attested through artifacts, loot chests, and scrolls.
+                            Now spirits reside since the eternal winter, with tears flowing down their face as Midgard falls apart. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="location">
+                <div class="location-name">
+                    <h4>Well of Urð</h4>
+                </div>
+                <div class="location-content">
+                    <div class="location-photo">
+                        <img src="/assets/realms/midgard/well-of-urd.jpg" alt="Well of Urð" loading="lazy">
+                    </div>
+                    <div class="location-description">
+                        <p>
+                            There live the Nornir, who weave the fate of warriors and gods behind the curtains.
+                            Shall one seek answers from them, the Nornir will commit ungodly actions to decide the deserving and the undeserving.
+                            One must be willing to overcome their gravest sins, their traumas, even their death.
+                            For the words of Nornir do not speak of sweet lies but bitter truths that sting the heart.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/realms/realm-article.js"></script>
+</body>
+</html>

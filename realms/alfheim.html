@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>God of War: The Norse Saga</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo/tab-logo.png"/>
+    <link rel="stylesheet" href="/realms/realm-article.css">
+</head>
+<body>
+    <div id="header"></div>
+    <script src="/header/header.js"></script>
+
+    <div class="realm-background" id="alfheim-background">
+        <div class="realm-header">
+            <div class="realm-logo">
+                <img src="/assets/realms/runes/alfheim-rune.png" alt="Alfheim Rune" loading="eager">
+            </div>
+            <div class="realm-name">
+                <h1>Alfheim</h1>
+                <h2>Realm of the Light Elves</h2>
+            </div>
+        </div>
+    </div>
+    
+    <div class="first-content">
+        <div class="overview-photo" id="alfheim-overview">
+            <div class="overview-content">
+                <div class="overview-title">
+                    <h2>Illusions of Fantasy</h2>
+                </div>
+                <hr>
+                <div class="overview-button">
+                    <button onclick="showPassage()">Learn More</button>
+                </div>
+                <div class="overview-text">
+                    <p id="text">
+                        The Realm of the Light Elves, known as Alfheim, is where the benign elves and the fierce elves live and battle. <br>
+                        Mortals perceive Alfheim as a grandeur and breathtaking realm, adorned with glorious architectures that flutter hearts at first glance.
+                        However, beyond those fantasy illusions lie unending full-scale wars between the two elven subraces, the Light Elves and the Dark Elves, each craving for dominance.
+                        Needless to say, countless have died, including the innocent ones who offered a truce in the pursuit of harmony.        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <hr class="line-separator">
+
+    <div class="location-header">
+        <h3>Major Regions</h3>
+    </div>
+    <div class="tab-buttons-wrapper">
+        <div class="tab">
+            <button class="tab-button" onclick="openGameTab(event, 'gow')">God of War (2018)</button>
+            <button class="tab-button" onclick="openGameTab(event, 'gowr')">God of War Ragnarök (2022)</button>
+        </div>
+    </div>
+    <div class="tab-content-wrapper">
+        <div class="tab-content" id="gow">
+            <div class="location">
+                <div class="location-name">
+                    <h4>Lake of Light</h4>
+                </div>
+                <div class="location-content">
+                    <div class="location-photo">
+                        <img src="/assets/realms/alfheim/lake-of-light.jpg" alt="Lake of Light" loading="lazy">
+                    </div>
+                    <div class="location-description">
+                        <p>
+                            The primary conduit to reach the glamorous Temple of Light, Lake of Light connects its grand icon and plethora of hidden pathways. <br/>
+                            Ascertain a boat and row through the glistening waterways to gaze at the grandeur elven structures or perhaps unearth exquisite elven treasures. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="location">
+                <div class="location-name">
+                    <h4>The Ringed Temple (Temple of Light)</h4>
+                </div>
+                <div class="location-content">
+                    <div class="location-photo">
+                        <img src="/assets/realms/alfheim/ringed-temple.jpg" alt="Ringed Temple" loading="lazy">
+                    </div>
+                    <div class="location-description">
+                        <p> 
+                            The main icon of the realm itself, Ringed Temple is the haven of both elven subraces, light elves and dark elves. <br/>
+                            Within the center of the sanctuary lies the Light of Alfheim itself, 
+                            the divine light capable of dispelling dark magic and channeling tremendous power to the Realm Travel Temple.
+                            However, the dark elves have overrun the structure and scattered hives that weaken the light.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-content-wrapper">
+        <div class="tab-content" id="gowr">
+            <div class="location">
+                <div class="location-name">
+                    <h4>Temple of Light</h4>
+                </div>
+                <div class="location-content">
+                    <div class="location-photo">
+                        <img src="/assets/realms/alfheim/temple-of-light.jpg" alt="Temple of Light" loading="lazy">
+                    </div>
+                    <div class="location-description">
+                        <p>
+                            Despite the on-going elven war, this temple remains intact and still houses lores of both elves. <br/>
+                            The towering ringed structure overlooking the realm, the structure boasting high intricacy contribute to the distinctiveness of the realm.
+                            The light is still present, unfortunately, with weaker brightness, signifying its declining energy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="location">
+                <div class="location-name">
+                    <h4>The Strönd</h4>
+                </div>
+                <div class="location-content">
+                    <div class="location-photo">
+                        <img src="/assets/realms/alfheim/the-strond.jpg" alt="The Strönd" loading="lazy">
+                    </div>
+                    <div class="location-description">
+                        <p>
+                            Behind the Temple of Light stretches a narrow pathway that leads to the Alfheim desert called The Strönd. <br/>
+                            Nothing ethereal about this eerie place aside of strange creatures, steep terrains, and various chests scattered around.
+                            Beware of dark elves or light elves in the vicinity as they tend to be hostile towards unwanted visitors!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="location">
+                <div class="location-name">
+                    <h4>The Barrens</h4>
+                </div>
+                <div class="location-content">
+                    <div class="location-photo">
+                        <img src="/assets/realms/alfheim/the-barrens.jpg" alt="The Barrens" loading="lazy">
+                    </div>
+                    <div class="location-description">
+                        <p>
+                            One of two major Alfheim deserts, called The Barrens, stands as a remarkable effect of the long-standing conflict.
+                            Damaged structures, lain skulls, and dark elven hives are the ultimate cost of war.
+                            Hidden in plain sight are stray animals or vile beings, seeking prey on the fragile.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="location">
+                <div class="location-name">
+                    <h4>The Forbidden Sands</h4>
+                </div>
+                <div class="location-content">
+                    <div class="location-photo">
+                        <img src="/assets/realms/alfheim/the-forbidden-sands.jpg" alt="The Forbidden Sands" loading="lazy">
+                    </div>
+                    <div class="location-description">
+                        <p>
+                            Sitting next to The Barrens stands another wasteland named The Forbidden Sands.
+                            Once was probably a field of blood, the desert is now an elven grave brimmed with hollowness.
+                            The breezing wind blows its flute, singing a sorrow song for the fallen elves.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/realms/realm-article.js"></script>
+</body>
+</html>

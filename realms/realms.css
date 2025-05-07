@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-content {
+    background-image: url(/assets/realms/cloth.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    overflow: auto;
+}
+
+.map-content {
+    width: 1292px;
+    height: 992px;
+    scale: 0.75;
+    position: relative;
+}
+
+.map-text {
+    position: absolute;
+    width: 360px;
+    top: 20px;
+    left: -150px;
+}
+
+.map-title h3 {
+    font-family: 'Cinzel', sans-serif;
+    font-size: 4.3rem;
+    font-weight: bold;
+    color: rgb(147, 94, 25);
+    margin: 20px 0;
+}
+
+.map-caption p {
+    font-size: 1.9rem;
+    text-align: left;
+}
+
+.realm, .yggdrasil-object {
+    position: absolute;
+    transition: all 0.27s ease-in-out;
+}
+
+.realm:hover {
+    scale: 1.4;
+    filter: drop-shadow(0 0 4rem white) drop-shadow(0 0 8rem white);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.realm-banner {
+    opacity: 0;
+    transition: all 0.35s ease-out;
+}
+
+.realm:hover .realm-banner {
+    opacity: 1;
+}
+
+.realm-banner img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.realm-banner p {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 1.4rem;
+    text-decoration: none;
+    z-index: 10;
+}
+
+a:-webkit-any-link {
+    color: black;
+    cursor: pointer;
+}
+
+/* Asgard */
+#asgard {
+    top: 60px;
+    right: 364px;
+}
+
+#asgard-banner img {
+    top: 70%;
+    left: 50%;
+}
+
+#asgard-banner p {
+    top: 68%;
+    left: 50%;
+}
+
+/* Alfheim */
+#alfheim {
+    top: 148px;
+    right: 636px;
+}
+
+#alfheim-banner img {
+    top: 83%;
+    left: 50%;
+}
+
+#alfheim-banner p {
+    top: 81%;
+    left: 50%;
+}
+
+/* Jotunheim */
+#jotunheim {
+    top: 122px;
+    right: 46px;
+}
+
+#jotunheim-banner img {
+    top: 81%;
+    left: 50%;
+}
+
+#jotunheim-banner p {
+    top: 78%;
+    left: 50%;
+}
+
+/* Vanaheim */
+#vanaheim {
+    top: 229px;
+    right: 263px;
+}
+
+#vanaheim-banner img {
+    top: 90%;
+    left: 50%;
+}
+
+#vanaheim-banner p {
+    top: 88%;
+    left: 50%;
+}
+
+/* Midgard */
+#midgard {
+    top: 380px;
+    left: 187px;
+}
+
+#midgard-banner img {
+    top: 100%;
+    left: 47%;
+}
+
+#midgard-banner p {
+    top: 98%;
+    left: 47%;
+}
+
+/* Svartalfheim */
+#svartalfheim {
+    bottom: 220px;
+    right: 194px;
+}
+
+#svartalfheim-banner img {
+    top: 87%;
+    left: 53%;
+}
+
+#svartalfheim-banner p {
+    top: 84%;
+    left: 53%;
+}
+
+/* Muspelheim */
+#muspelheim {
+    bottom: 167px;
+    left: 258px;
+}
+
+#muspelheim-banner img {
+    top: 75%;
+    left: 59%;
+}
+
+#muspelheim-banner p {
+    top: 72%;
+    left: 59%;
+}
+
+/* Niflheim */
+#niflheim {
+    bottom: 85px;
+    right: 300px;
+}
+
+#niflheim-banner img {
+    top: 81%;
+    left: 55%;
+}
+
+#niflheim-banner p {
+    top: 78%;
+    left: 55%;
+}
+
+/* Helheim */
+#helheim {
+    bottom: 46px;
+    left: 40px;
+}
+
+#helheim-banner img {
+    top: 90%;
+    left: 50%;
+}
+
+#helheim-banner p {
+    top: 88%;
+    left: 50%;
+}
+
+/* Yggdrasil Objects */
+#tree {
+    bottom: 251px;
+    left: 65px;
+}
+
+#ratatoskr {
+    bottom: 306px;
+    left: 145px;
+}
+
+#dragon-logo {
+    bottom: 20px;
+    left: 622px;
+}
+
+#compass-base {
+    bottom: 112px;
+    right: 32px;
+}
+
+#compass-arrows {
+    bottom: 146px;
+    right: 138px;
+}
+
+@media screen and (max-width: 1350px) {
+    .main-content {
+        justify-content: start;
+        align-items: center;
+        overflow: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .map-content {
+        scale: 0.7;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .main-content {
+        display: block;
+    }
+
+    .map-content {
+        scale: 0.66;
+    }
+}

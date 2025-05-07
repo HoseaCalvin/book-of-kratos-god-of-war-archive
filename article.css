@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.landing-page {
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    position: relative;
+    height: 75vh;
+    width: auto;
+}
+
+#realm-article {
+    background-image: url(/assets/realms/realm-travel-table.jpg);
+}
+
+#character-article {
+    background-image: url(/assets/characters/kratos-and-atreus.jpg);
+}
+
+.summary {
+    background-color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: clamp(min-content, 900px, 950px);
+    height: auto;
+    padding: 7px 3rem;
+}
+
+.summary-title h4 {
+    font-family: 'Cinzel';
+    font-size: 5rem;
+    text-align: center;
+    margin: 1.2rem;
+    padding: 5px;
+}
+
+.first-content {
+    margin-top: 5rem;
+}
+
+.content {
+    margin: 7rem 1rem;
+    padding: 50px 0;
+}
+
+.overview-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    gap: 30%;
+}
+
+#realm-wallpaper {
+    background: #efefef;
+    border-radius: 8px;
+}
+
+.overview-photo {
+    display: flex;
+    width: 1300px;
+    position: relative;
+}
+
+.overview-photo img {
+    width: 800px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.overview-text {
+    position: absolute;
+    top: 55%;
+    transform: translate(-50%, 0);
+    text-align: justify;
+    padding: 1.5rem 5rem 4rem 1.5rem;
+    width: 50%;
+    background-color: rgb(243, 243, 243);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+#right-orientation {
+    justify-content: flex-end;
+}
+
+#text-left {
+    left: 75%;
+}
+
+#text-right {
+    right: 25%;
+}
+
+.overview-title {
+    text-align: start;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    font-family: 'Montserrat', serif;
+    margin-bottom: 30px;
+}
+
+.overview-description {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .summary-title h4 {
+        font-size: 3.5rem;
+        margin: 1rem;
+        padding: 5px;
+    }
+
+    .overview-photo {
+        width: 1000px;
+    }
+
+    .overview-photo img {
+        width: 650px;
+    }
+
+    .overview-title {
+        font-size: 2rem;
+    }
+
+    .overview-description {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .summary {
+        padding: 7px;
+    }
+
+    .summary-title h4 {
+        font-size: 2.5rem;
+        margin: 1rem;
+        padding: 5px;
+    }
+
+    .content {
+        margin: 4.5rem 1rem;
+    }
+
+    .overview-photo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: static;
+        margin-bottom: 1.5rem;
+    }
+
+    .overview-photo img {
+        width: 100%;
+    }
+
+    .overview-text {
+        margin-top: 1.5rem;
+        position: static;
+        width: 100%;
+        transform: translate(0, 0);
+        padding: 2rem;
+    }
+
+    .overview-title {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 18px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .summary-title h4 {
+        font-size: 2rem;
+        margin: 1rem;
+        padding: 5px;
+    }
+
+    .overview-photo {
+        margin: 0 1.5rem;
+    }
+
+    .overview-text {
+        padding: 1.3rem;
+    }
+
+    .overview-title {
+        font-size: 1.4rem;
+    }
+
+    .overview-description {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .landing-page {
+        height: 45vh;
+    }
+
+    .summary-title h4 {
+        font-size: 1.2rem;
+        margin: 0.6rem;
+        padding: 5px;
+    }
+
+    .content {
+        margin: 2rem 1rem;
+    }    
+
+    .overview-photo {
+        margin: 0 1.5rem;
+    }
+
+    .overview-title {
+        font-size: 1.2rem;
+    }
+
+    .overview-description {
+        font-size: 11px;
+    }
+}
