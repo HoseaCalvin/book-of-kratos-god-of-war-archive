@@ -70,7 +70,11 @@ body {
     background-color: white;
     border: rgb(213, 213, 213) 3px solid;
     border-radius: 50%;
-    padding: 12px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .realm-logo img {
@@ -357,11 +361,6 @@ body {
         left: 35vw;
     }
 
-    .realm-logo {
-        border-radius: 50%;
-        padding: 8px;
-    }
-
     .realm-logo img {
         width: 12rem;
     }
@@ -484,7 +483,6 @@ body {
         padding: 1.5rem 1rem;
     }
 
-    
     .tab-button {
         padding: 0.7rem 1rem;
         font-size: 0.7rem;
@@ -549,6 +547,7 @@ body {
 
     .realm-logo img {
         width: 4rem;
+        height: auto;
     }
 
     .realm-name h1 {
@@ -567,7 +566,6 @@ body {
     .game-title h2 {
         font-size: 12px;
     }
-
 }
 
 @media screen and (max-width: 326px) {
