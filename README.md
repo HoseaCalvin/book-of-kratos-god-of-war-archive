@@ -1,4 +1,4 @@
-# God of War: A Fan Website
+# God of War: Unofficial Fan Site
 
 This fan-made website lets user discover enthralling aspects, ranging from gameplay overviews to the spelndor of the Nine Realms.
 
