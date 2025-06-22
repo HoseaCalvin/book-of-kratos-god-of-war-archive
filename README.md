@@ -1,4 +1,4 @@
-# God of War: The Norse Saga
+# Book of Kratos: God of War Archive
 
 This website lets user discover enthralling aspects, ranging from gameplay overviews to the spelndor of the Nine Realms.
 
@@ -9,6 +9,7 @@ This website lets user discover enthralling aspects, ranging from gameplay overv
 2. **Characters**: Gives details about character dynamics and appearance of some notable characters in both games.
 3. **Realms**: Delves into the Nine Realms.
 4. **Quiz**: A fun-to-play, short quiz that opens pages about lores and fun facts in both games.
+5. **About**: Addresses that the website is unofficial and strictly fan-made.
 
 ## DISCLAIMER
 This is an unofficial, fan-made website dedicated to the God of War franchise. All characters, weapons, artwork, logos, and other intellectual property related to God of War are the property of Sony Interactive Entertainment and Santa Monica Studio.
