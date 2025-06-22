@@ -1,6 +1,6 @@
 const quizzes = [
     {
-        background: "/assets/quiz/mjolnir-and-leviathan-axe.jpg",
+        background: "/assets/quiz/mjolnir-and-leviathan-axe.png",
         question: "Which weapon does Kratos intially wield?",
         answers: [
             {text: "Blades of Chaos", correct: true},
@@ -50,7 +50,7 @@ const quizzes = [
         ]
     },
     {
-        background: "/assets/quiz/odin.jpg",
+        background: "/assets/quiz/odin.png",
         question: "Why is Odin missing his right eye?",
         answers: [
             {text: "Gouged by a Jötunn during one of his battles", correct: false},
@@ -70,7 +70,7 @@ const quizzes = [
         ]
     },
     {
-        background: "/assets/quiz/the-summit.jpg",
+        background: "/assets/quiz/the-summit.png",
         question: "Why is Mimir imprisoned by Odin for 109 winters?",
         answers: [
             {text: "Inviting an unwanted visitor to Asgard without Odin's consent", correct: false},
@@ -80,7 +80,7 @@ const quizzes = [
         ]
     },
     {
-        background: "/assets/quiz/svartalfheim.jpg",
+        background: "/assets/quiz/svartalfheim.png",
         question: "Why does Odin prevent access to Svartalfheim?",
         answers: [
             {text: "The dwarves are under heavy oppression by the Aesir", correct: false},
@@ -124,7 +124,7 @@ function getAllQuestions() {
     quizQuestion.innerHTML = currentQuiz.question;
     quizHeader.innerHTML = 'Quiz #' + quizNumber;
 
-    body.style.backgroundImage = "linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(" + currentQuiz.background + ")";
+    body.style.backgroundImage = "linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(" + currentQuiz.background + ")";
 
     currentQuiz.answers.forEach(answer => {
         const button = document.createElement('button');
@@ -177,7 +177,7 @@ function getScore() {
     quizHeader.innerHTML = 'End of Quiz'
     quizQuestion.innerHTML = `You got ${score} correct answers out of ${quizzes.length} questions! `;
 
-    body.style.backgroundImage = "linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/quiz/vanaheim-exotic-view.jpg)";
+    body.style.backgroundImage = "linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/quiz/vanaheim-exotic-view.png)";
     
     nextButton.innerHTML = 'Go Back';
     nextButton.disabled = false;
