@@ -1,6 +1,6 @@
 const quizzes = [
     {
-        background: "/assets/quiz/mjolnir-and-leviathan-axe.png",
+        background: "/assets/quiz/knife.png",
         question: "Which weapon does Kratos intially wield?",
         answers: [
             {text: "Blades of Chaos", correct: true},
@@ -177,7 +177,7 @@ function getScore() {
     quizHeader.innerHTML = 'End of Quiz'
     quizQuestion.innerHTML = `You got ${score} correct answers out of ${quizzes.length} questions! `;
 
-    body.style.backgroundImage = "linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/quiz/vanaheim-exotic-view.png)";
+    body.style.backgroundImage = "linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/quiz/odin-library.png)";
     
     nextButton.innerHTML = 'Go Back';
     nextButton.disabled = false;
