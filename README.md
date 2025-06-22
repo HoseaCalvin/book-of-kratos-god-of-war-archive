@@ -1,6 +1,6 @@
 # God of War: The Norse Saga
 
-**DISCLAIMER:**
+## DISCLAIMER
 This is an unofficial, fan-made website dedicated to the God of War franchise. All characters, weapons, artwork, logos, and other intellectual property related to God of War are the property of Sony Interactive Entertainment and Santa Monica Studio.
 This site is not affiliated with, endorsed by, or sponsored by Sony Interactive Entertainment, Santa Monica Studio, or any of their subsidiaries.
 Any media or content used on this site is for informational, educational, and entertainment purposes only. All rights to external images, videos, and artworks belong to their respective creators and are credited where possible.
