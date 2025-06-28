@@ -2,9 +2,19 @@
 
 This fan-made website lets user discover enthralling aspects, ranging from gameplay overviews to the spelndor of the Nine Realms.
 
-**Tech Stack: HTML, CSS, JavaScript**
+## 🎯 Objective
 
-## Features
+Driven by my profound love for God of War games set in Norse mythology, I developed my fan website that brings together content from both God of War and God of War Ragnarök.
+
+To ensure there are no critical issues such as usability and performance, I designed the website to be user-friendly and have a visual that reflects both God of War and Norse mythology aesthetics.
+
+In addition, this fan-made website focuses on gameplay overviews, deep lore behind each prominent character, and the grandeur and the brutality of the Nine Realms. I implemented an engaging quiz game to test users' knowledge of both games.
+
+## 💻 Tech Stack
+
+HTML, CSS, JavaScript
+
+## 🎨 Features
 1. **Home**: Provides a gameplay overview and summary of God of War (2018) and God of War Ragnarök (2022).
 2. **Characters**: Gives details about character dynamics and appearance of some notable characters in both games.
 3. **Realms**: Delves into the Nine Realms.
@@ -17,3 +27,16 @@ This is an unofficial, fan-made website dedicated to the God of War franchise. A
 This site is not affiliated with, endorsed by, or sponsored by Sony Interactive Entertainment, Santa Monica Studio, or any of their subsidiaries.
 
 Any media or content used on this site is for informational, educational, and entertainment purposes only. All rights to external images, videos, and artworks belong to their respective creators and are credited where possible.
+
+
+
+
+## 💻 Tech Stack
+
+Node.js, React, Tailwind
+
+## 🎨 Features
+1. **Home**: Displays a slideshow of alluring countries and an overview of WorldUniversity.
+2. **Search**: Allows searching for every sovereign and non-sovereign nation in the world.
+3. **Filter**: Allows filtering nations based on 'continent', 'language', and 'independence status'.
+4. **About**: Provides in-depth details about what WorldUniversity is about.
