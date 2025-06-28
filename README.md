@@ -21,22 +21,9 @@ HTML, CSS, JavaScript
 4. **Quiz**: A fun-to-play, short quiz that opens pages about lores and fun facts in both games.
 5. **About**: Addresses that the website is unofficial and strictly fan-made.
 
-## Disclaimer
+## ⚠️ Disclaimer
 This is an unofficial, fan-made website dedicated to the God of War franchise. All characters, weapons, artwork, logos, and other intellectual property related to God of War are the property of Sony Interactive Entertainment and Santa Monica Studio.
 
 This site is not affiliated with, endorsed by, or sponsored by Sony Interactive Entertainment, Santa Monica Studio, or any of their subsidiaries.
 
 Any media or content used on this site is for informational, educational, and entertainment purposes only. All rights to external images, videos, and artworks belong to their respective creators and are credited where possible.
-
-
-
-
-## 💻 Tech Stack
-
-Node.js, React, Tailwind
-
-## 🎨 Features
-1. **Home**: Displays a slideshow of alluring countries and an overview of WorldUniversity.
-2. **Search**: Allows searching for every sovereign and non-sovereign nation in the world.
-3. **Filter**: Allows filtering nations based on 'continent', 'language', and 'independence status'.
-4. **About**: Provides in-depth details about what WorldUniversity is about.
