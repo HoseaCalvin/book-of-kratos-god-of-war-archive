@@ -22,7 +22,7 @@ body {
 }
 
 #alfheim-background {
-    background-image: url(/assets/realms/alfheim/alfheim-cover.jpg);
+    background-image: url(/assets/realms/alfheim/alfheim-cover.png);
 }
 
 #asgard-background {
@@ -34,15 +34,15 @@ body {
 }
 
 #vanaheim-background {
-    background-image: url(/assets/realms/vanaheim/vanaheim-cover.jpg);
+    background-image: url(/assets/realms/vanaheim/vanaheim-cover.png);
 }
 
 #midgard-background {
-    background-image: url(/assets/realms/midgard/midgard-cover.jpg);
+    background-image: url(/assets/realms/midgard/midgard-cover.png);
 }
 
 #svartalfheim-background {
-    background-image: url(/assets/realms/svartalfheim/svartalfheim-cover.jpg);
+    background-image: url(/assets/realms/svartalfheim/svartalfheim-cover.png);
 }
 
 #niflheim-background {
@@ -50,7 +50,7 @@ body {
 }
 
 #helheim-background {
-    background-image: url(/assets/realms/helheim/helheim-cover.jpg);
+    background-image: url(/assets/realms/helheim/helheim-cover.png);
 }
 
 #muspelheim-background {
@@ -130,7 +130,7 @@ body {
 }
 
 #alfheim-overview {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/realms/alfheim/alfheim-overview.jpg);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/realms/alfheim/alfheim-overview.png);
 }
 
 #asgard-overview {
@@ -146,15 +146,15 @@ body {
 }
 
 #midgard-overview {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/realms/midgard/midgard-overview.jpg);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/realms/midgard/midgard-overview.png);
 }
 
 #svartalfheim-overview {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/realms/svartalfheim/svartalfheim-overview.jpg);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/realms/svartalfheim/svartalfheim-overview.png);
 }
 
 #niflheim-overview {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/realms/niflheim/niflheim-overview.jpg);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/realms/niflheim/niflheim-overview.png);
 }
 
 #helheim-overview {
@@ -162,7 +162,7 @@ body {
 }
 
 #muspelheim-overview {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/realms/muspelheim/muspelheim-overview.jpg);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/realms/muspelheim/muspelheim-overview.png);
 }
 
 .overview-content {
