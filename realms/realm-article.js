@@ -18,16 +18,3 @@ document.addEventListener('DOMContentLoaded', function() {
         openFirstTab.click();
     }
 })
-
-function showPassage() {
-    const passage = document.querySelector(".overview-text");
-    const content = document.querySelector(".overview-content");
-
-    passage.classList.toggle('show');
-    
-    if (passage.classList.contains("show")) {
-        content.classList.add("move-up");
-    } else {
-        content.classList.remove("move-up");
-    }
-}

@@ -68,6 +68,10 @@ body {
     text-shadow: 0 0 12px black;
 }
 
+.overview {
+    background: rgb(65, 65, 65);
+}
+
 .overview-wrapper {
     width: 100%;
     max-width: 1800px;
@@ -100,18 +104,25 @@ body {
 .overview-gallery {
     position: relative;
     overflow: hidden;
+    width: 500px;
+    height: 300px;
 }
 
 .overview-gallery img {
-    width: 500px;
-    height: auto;
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
     align-items: center;
     border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.6s ease, transform 0.6s ease-in-out;
 }
 
 img.showSlide {
-    display: block;
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .overview-text h5 {
@@ -123,6 +134,7 @@ img.showSlide {
 .overview-text p {
     font-size: 15px;
     padding: 5px;
+    text-align: justify;
 }
 
 .prev, .next {
@@ -178,9 +190,9 @@ img.showSlide {
         box-sizing: border-box;
     }
 
-    .overview-gallery img {
+    .overview-gallery {
         width: 400px;
-        height: auto;
+        height: 240px;
     }
 }
 
@@ -193,9 +205,14 @@ img.showSlide {
         font-size: 1.4rem;
     }
 
-    .overview-gallery img {
+    .overview-gallery {
         width: 350px;
-        height: auto;
+        height: 210px;
+    }
+
+    .overview-text h5 {
+        font-size: 17px;
+        padding: 12px;
     }
 
     .overview-text p {
@@ -209,9 +226,9 @@ img.showSlide {
         font-size: 1.2rem;
     }
 
-    .overview-gallery img {
+    .overview-gallery {
         width: 300px;
-        height: auto;
+        height: 180px;
     }
 }
 
@@ -231,9 +248,9 @@ img.showSlide {
         padding-bottom: 1.8rem;
     }
 
-    .overview-gallery img {
+    .overview-gallery {
         width: 400px;
-        height: auto;
+        height: 230px;
     }
 }
 
@@ -254,9 +271,9 @@ img.showSlide {
         width: 0%;
     }
 
-    .overview-gallery img {
+    .overview-gallery {
         width: 350px;
-        height: auto;
+        height: 225px;
     }
 }
 
@@ -265,9 +282,9 @@ img.showSlide {
         font-size: 1.1rem;
     }
 
-    .overview-gallery img {
+    .overview-gallery {
         width: 300px;
-        height: auto;
+        height: 180px;
     }
 
     .overview-text h5 {
@@ -287,8 +304,8 @@ img.showSlide {
         font-size: 0.9rem;
     }
 
-    .overview-gallery img {
+    .overview-gallery {
         width: 250px;
-        height: auto;
+        height: 150px;
     }
 }

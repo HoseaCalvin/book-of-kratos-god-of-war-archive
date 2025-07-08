@@ -11,7 +11,7 @@ header {
     font-family: 'Cinzel', sans-serif;
     font-weight: 600;
     color: black;
-    filter: drop-shadow(0 0 10px rgb(76, 76, 76));
+    filter: drop-shadow(0 0 12px rgb(190, 190, 190));
     top: 0;
     left: 0;
     right: 0;
@@ -25,7 +25,7 @@ header {
 }
 
 .logo {
-    width: 200px;
+    width: 190px;
     height: auto;
 }
 
@@ -90,6 +90,12 @@ header {
     cursor: pointer;
 }
 
+@media screen and (max-width: 942px) {
+    .logo-text {
+        font-size: 0.8rem;
+    }
+}
+
 @media screen and (max-width: 820px) {
     .hamburger-menu {
         display: block;
@@ -100,7 +106,7 @@ header {
     }
 
     .logo-text {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     }
 
     .nav-menu {
@@ -121,7 +127,7 @@ header {
     }
 
     .nav-menu.active {
-        top: 80px;
+        top: 77px;
     }
 
     .hamburger-menu.active .bar:nth-child(2) {
@@ -142,6 +148,10 @@ header {
         width: 100px;
     }
 
+    .logo-text {
+        font-size: 0.5rem;
+    }
+
     .nav-menu {
         display: flex;
         flex-direction: column;
@@ -153,7 +163,7 @@ header {
     }
 
     .nav-menu.active {
-        top: 66px;
+        top: 62px;
     }
 
 }

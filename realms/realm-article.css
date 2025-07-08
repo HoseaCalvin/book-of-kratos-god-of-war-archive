@@ -106,7 +106,7 @@ body {
 
 .first-content {
     margin-top: 10.5rem;
-    margin-bottom: 4.5rem;
+    margin-bottom: 4rem;
 }
 
 .content {
@@ -117,52 +117,17 @@ body {
     margin: 0 30px;
 }
 
-.overview-photo {
-    width: 100%;
-    max-width: 1600px;
-    height: 650px;
-    margin: 0 auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
+.overview-wrapper {
     display: flex;
+    position: relative;
     justify-content: center;
 }
 
-#alfheim-overview {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/realms/alfheim/alfheim-overview.png);
-}
-
-#asgard-overview {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/realms/asgard/asgard-overview.jpg);
-}
-
-#jotunheim-overview {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/realms/jotunheim/jotunheim-overview.jpg);
-}
-
-#vanaheim-overview {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/realms/vanaheim/vanaheim-overview.png);
-}
-
-#midgard-overview {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/realms/midgard/midgard-overview.png);
-}
-
-#svartalfheim-overview {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/realms/svartalfheim/svartalfheim-overview.png);
-}
-
-#niflheim-overview {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/realms/niflheim/niflheim-overview.png);
-}
-
-#helheim-overview {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/realms/helheim/helheim-overview.jpg);
-}
-
-#muspelheim-overview {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/realms/muspelheim/muspelheim-overview.png);
+.overview-image {
+    max-width: 1800px;
+    height: auto;
+    width: 90%;
+    border-radius: 20px;
 }
 
 .overview-content {
@@ -171,15 +136,12 @@ body {
     transition: all 0.4s ease-in-out;
 }
 
-.overview-content.move-up {
-    bottom: 12%;
-}
-
 .overview-title h2 {
     font-family: 'Montserrat', sans-serif;
     color: rgb(255, 255, 255);
     text-align: center;
     font-size: 3.2rem;
+    filter: drop-shadow(0 0 15px rgb(0, 0, 0));
 }
 
 .overview-button {
@@ -199,11 +161,6 @@ body {
     font-size: 17px;
     margin-top: 1rem;
     padding: 0.6rem;
-}
-
-.overview-text.show {
-    opacity: 1;
-    max-height: 500px;
 }
 
 .overview-button button {
@@ -231,13 +188,14 @@ body {
 }
 
 .line-separator {
-    margin: 0 80px;
+    margin: 0 10%;
 }
 
 .location-header h3 {
-    font-family: 'Cinzel', sans-serif;
-    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
     padding: 2rem 1rem;
+    margin-bottom: 1.5rem;
     text-align: center;
 }
 
@@ -247,27 +205,30 @@ body {
 }
 
 .tab {
-    background-color: rgb(243, 243, 243);
+    border-bottom: solid rgb(202, 202, 202);
     display: flex;
     justify-content: center;
-    gap: 5px;
-    border-radius: 20px;
     margin: 0 5rem 2.5rem 5rem;
-    padding: 20px 15px;
+    padding: 0 15px;
 }
 
 .tab-button {
     background-color: white;
     border: none;
     font-weight: bold;
-    padding: 0.8rem;
+    padding: 0.4rem;
     cursor: pointer;
+    border-bottom: solid rgb(255, 255, 255);
+}
+
+.tab-button img {
+    width: 150px;
+    height: auto;
 }
 
 .tab-button.active {
-    background-color: rgb(169, 17, 28);
-    border-radius: 5px;
     color: white;
+    border-bottom: solid rgb(0, 0, 0);
 }
 
 .tab-content-wrapper {
@@ -276,24 +237,20 @@ body {
 }
 
 .tab-content {
-    background-color: rgb(243, 243, 243);
-    margin: 0 5rem 2.5rem 5rem;
+    margin: 1rem 4rem;
     padding: 10px 50px;
     border-radius: 20px;
     overflow: hidden;
-}
-
-.game-title h2 {
-    text-align: center;
-    font-size: 18px;
+    position: relative;
 }
 
 .location {
     max-width: 1400px;
-    background-color: rgb(234, 234, 234);
+    background-color: rgb(249, 249, 249);
     padding: 2rem;
     border-radius: 1rem;
-    margin: 2rem 0;
+    margin-bottom: 4.5rem;
+    filter: drop-shadow(0 0 10px rgb(210, 210, 210));
 }
 
 .location-content {
@@ -321,6 +278,17 @@ body {
 .location-description p {
     font-size: 1.2rem;
     text-align: justify;
+}
+
+.slide-in {
+    opacity: 0;
+    transform: translateX(-10%);
+    transition: transform 0.75s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.slide-in.reveal {
+    opacity: 1;
+    transform: translateX(0%);
 }
 
 @media screen and (max-width: 1200px) {
@@ -377,6 +345,15 @@ body {
         font-size: 1.1rem;
     }
 
+    .first-content {
+        margin-top: 10.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .overview-title h2 {
+        font-size: 2.2rem;
+        padding: 0.8rem 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -411,6 +388,11 @@ body {
         font-size: 1rem;
         padding: 0.4rem;
     }
+    
+    .first-content {
+        margin-top: 6rem;
+        margin-bottom: 2rem;
+    }
 
     .overview-button button {
         font-size: 1.1rem;
@@ -420,8 +402,13 @@ body {
         bottom: 8%;
     }
 
+    .location-header h3 {
+        font-size: 20px;
+    }
+
     .tab {
         margin: 1rem;
+        margin-bottom: 3rem;
     }
 
     .tab-content {
@@ -433,6 +420,11 @@ body {
     .realm-header {
         left: 34vw;
     }
+
+    .overview-title h2 {
+        font-size: 1.6rem;
+    }
+
 }
 
 @media screen and (max-width: 560px) {
@@ -455,11 +447,21 @@ body {
     .realm-name h2 {
         font-size: 0.8rem;
     }
+
+    .first-content {
+        margin-top: 6rem;
+        margin-bottom: 2.3rem;
+    }
+
+    .tab-button img {
+        width: 120px;
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 546px) {
     .realm-header {
-        left: 37vw;
+        left: 40vw;
     }
 
     .overview-title h2 {
@@ -471,16 +473,25 @@ body {
     }
 
     .overview-title h2 {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
     }
 
     #text {
         font-size: 0.9rem;
     }
 
+    .first-content {
+        margin-top: 5.6rem;
+        margin-bottom: 2rem;
+    }
+
     .location-header h3 {
-        font-size: 27px;
+        font-size: 18px;
         padding: 1.5rem 1rem;
+    }
+
+    .tab {
+        margin-bottom: 2rem;
     }
 
     .tab-button {
@@ -489,13 +500,14 @@ body {
     }
 
     .tab-content {
-       padding: 8px 20px;
+       padding: 8px 30px;
+       margin: 0 1rem 0.5rem 1rem;
     }
 }
 
 @media screen and (max-width: 426px) {
     .realm-header {
-        left: 42vw;
+        left: 44vw;
     }    
 
     .realm-logo img {
@@ -504,11 +516,6 @@ body {
 
     .overview-content.move-up {
         bottom: 5%;
-    }
-
-    .overview-title h2 {
-        font-size: 1.7rem;
-        padding: 0.7rem 0;
     }
 
     #text {
@@ -520,13 +527,23 @@ body {
         font-size: 0.95rem;
     }
 
+    .first-content {
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .tab-button img {
+        width: 100px;
+        height: auto;
+    }
+
     .tab-button {
         padding: 0.4rem 0.8rem;
         font-size: 0.5rem;
     }
 
     .location-header h3 {
-        font-size: 23px;
+        font-size: 15px;
         padding: 1rem 0.7rem;
     }
 
@@ -559,7 +576,7 @@ body {
     }
 
     .overview-title h2 {
-        font-size: 1.3rem;
+        font-size: 1rem;
         padding: 0.6rem 0;
     }
 
@@ -571,6 +588,21 @@ body {
 @media screen and (max-width: 326px) {
     .realm-header {
         left: 46vw;
+    }
+    
+    .first-content {
+        margin-top: 3.5rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .tab-button img {
+        width: 80px;
+        height: auto;
+    }
+
+    .location {
+        padding: 1.2rem;
+        margin-bottom: 2.5rem;
     }
 
     .location-name h4 {

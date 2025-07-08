@@ -22,43 +22,33 @@
             </div>
         </div>
     </div>
-
     <div class="first-content">
-        <div class="overview-photo" id="helheim-overview">
+        <div class="overview-wrapper">
+            <img class="overview-image" src="/assets/realms/helheim/helheim-overview.png" alt="Helheim Overview">
             <div class="overview-content">
                 <div class="overview-title">
                     <h2>Unending Curse</h2>
                 </div>
-                <hr>
-                <div class="overview-button">
-                    <button onclick="showPassage()">Learn More</button>
-                </div>
-                <div class="overview-text">
-                    <p id="text">
-                        Anyone deemed dishonorable by the Valkyries are met with the blistering cold of Helheim, a realm where no mortals return from. <br>
-                        Their souls are watched upon, kept tightly in the grasp of Hræsvelgr, until time knows not when to stop.
-                        However, whosoever brought shame and destruction faces a graver fate.
-                        Their spirits journey to a shore where a hungry serpent awaits for supper.
-                    </p>
-                </div>
             </div>
         </div>
     </div>
-
     <hr class="line-separator">
-
     <div class="location-header">
         <h3>Major Regions</h3>
     </div>
     <div class="tab-buttons-wrapper">
         <div class="tab">
-            <button class="tab-button" onclick="openGameTab(event, 'gow')">God of War (2018)</button>
-            <button class="tab-button" onclick="openGameTab(event, 'gowr')">God of War Ragnarök (2022)</button>
+            <button class="tab-button" onclick="openGameTab(event, 'gow')">
+                <img src="/assets/logo/god-of-war-logo.png" alt="God of War">
+            </button>
+            <button class="tab-button" onclick="openGameTab(event, 'gowr')">
+                <img src="/assets/logo/god-of-war-ragnarok-logo.png" alt="God of War Ragnarök">
+            </button>
         </div>
     </div>
     <div class="tab-content-wrapper">
         <div class="tab-content" id="gow">
-            <div class="location">
+            <div class="location slide-in">
                 <div class="location-name">
                     <h4>Bridge of the Damned</h4>
                 </div>
@@ -77,10 +67,9 @@
             </div>
         </div>
     </div>
-
     <div class="tab-content-wrapper">
         <div class="tab-content" id="gowr">
-            <div class="location">
+            <div class="location slide-in">
                 <div class="location-name">
                     <h4>Docks of Vaðgelmir</h4>
                 </div>
@@ -97,7 +86,7 @@
                     </div>
                 </div>
             </div>
-            <div class="location">
+            <div class="location slide-in">
                 <div class="location-name">
                     <h4>The Silent Clearing</h4>
                 </div>
@@ -118,5 +107,6 @@
     </div>
 
     <script src="/realms/realm-article.js"></script>
+    <script src="/animation.js" defer></script>
 </body>
 </html>

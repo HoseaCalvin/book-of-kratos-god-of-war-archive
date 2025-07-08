@@ -25,6 +25,7 @@
     overflow: hidden; 
     filter: brightness(60%);
     transition: all 0.45s ease-in-out;
+    cursor: pointer;
 }
 
 .character-title h5 {

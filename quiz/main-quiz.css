@@ -40,14 +40,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    max-width: 1000px;
 }
 
 .next-btn, .btn {
     background: rgb(169, 17, 28);
     font-family: 'Montserrat', sans-serif;
     color: white;
-    border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s ease-in;
 }
@@ -56,10 +55,11 @@ body {
     font-size: 1rem;
     font-weight: bold;
     padding: 0.85rem 2.2rem;
-    width: 70%;
+    width: 100%;
 }
 
 .next-btn {
+    border-radius: 4px;
     font-size: 1.3rem;
     padding: 0.85rem 2.6rem;
     margin: 20px auto;
@@ -145,9 +145,8 @@ body {
     }
 
     .btn {
-        font-size: 0.7rem;
-        padding: 0.4rem 1.3rem;
-        width: 80%;
+        font-size: 0.51rem;
+        padding: 0.5rem 0.3rem;
     }
 
     .next-btn {

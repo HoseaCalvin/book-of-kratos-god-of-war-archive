@@ -29,6 +29,17 @@
     left: -150px;
 }
 
+.slide-up {
+    transform: translateY(20%);
+    opacity: 0;
+    transition: transform 0.6s ease-in-out, opacity 0.8s ease-in-out;
+}
+
+.slide-up.reveal {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
 .map-title h3 {
     font-family: 'Cinzel', sans-serif;
     font-size: 4.3rem;
@@ -48,7 +59,6 @@
 
 .realm {
     position: absolute;
-    transition: all 0.4s ease-out;
 }
 
 .realm:hover {
@@ -60,7 +70,7 @@
 
 .realm-banner {
     opacity: 0;
-    transition: all 0.25s ease-out;
+    transition: all 0.45s ease-out;
 }
 
 .realm:hover .realm-banner {
@@ -75,7 +85,8 @@
 .realm-banner p {
     position: absolute;
     transform: translate(-50%, -50%);
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    font-weight: 600;
     text-decoration: none;
     z-index: 10;
 }
@@ -85,10 +96,27 @@ a:-webkit-any-link {
     cursor: pointer;
 }
 
+#asgard, #alfheim, #jotunheim, #vanaheim, #midgard, #svartalfheim, #muspelheim, #niflheim, #helheim {
+    opacity: 0;
+}
+
+#asgard.reveal, #alfheim.reveal, #jotunheim.reveal, #vanaheim.reveal, #midgard.reveal, #svartalfheim.reveal, #muspelheim.reveal, #niflheim.reveal, #helheim.reveal {
+    opacity: 1;
+}
+
+#compass-arrows {
+    transform: rotate(-45deg);
+}
+
+#compass-arrows.reveal {
+    transform: rotate(0deg);
+}
+
 /* Asgard */
 #asgard {
     top: 60px;
     right: 364px;
+    transition: opacity 0.5s ease-out;
 }
 
 #asgard-banner img {
@@ -105,6 +133,7 @@ a:-webkit-any-link {
 #alfheim {
     top: 148px;
     right: 636px;
+    transition: opacity 0.6s ease-out;
 }
 
 #alfheim-banner img {
@@ -121,6 +150,7 @@ a:-webkit-any-link {
 #jotunheim {
     top: 122px;
     right: 46px;
+    transition: opacity 0.75s ease-out;
 }
 
 #jotunheim-banner img {
@@ -129,7 +159,7 @@ a:-webkit-any-link {
 }
 
 #jotunheim-banner p {
-    top: 78%;
+    top: 79%;
     left: 50%;
 }
 
@@ -137,6 +167,7 @@ a:-webkit-any-link {
 #vanaheim {
     top: 229px;
     right: 263px;
+    transition: opacity 0.9s ease-out;
 }
 
 #vanaheim-banner img {
@@ -153,6 +184,7 @@ a:-webkit-any-link {
 #midgard {
     top: 380px;
     left: 187px;
+    transition: opacity 1.05s ease-out;
 }
 
 #midgard-banner img {
@@ -169,6 +201,7 @@ a:-webkit-any-link {
 #svartalfheim {
     bottom: 220px;
     right: 194px;
+    transition: opacity 1.2s ease-out;
 }
 
 #svartalfheim-banner img {
@@ -177,7 +210,7 @@ a:-webkit-any-link {
 }
 
 #svartalfheim-banner p {
-    top: 84%;
+    top: 84.5%;
     left: 53%;
 }
 
@@ -185,6 +218,7 @@ a:-webkit-any-link {
 #muspelheim {
     bottom: 167px;
     left: 258px;
+    transition: opacity 1.35s ease-out;
 }
 
 #muspelheim-banner img {
@@ -193,7 +227,7 @@ a:-webkit-any-link {
 }
 
 #muspelheim-banner p {
-    top: 72%;
+    top: 72.5%;
     left: 59%;
 }
 
@@ -201,6 +235,7 @@ a:-webkit-any-link {
 #niflheim {
     bottom: 85px;
     right: 300px;
+    transition: opacity 1.5s ease-out;
 }
 
 #niflheim-banner img {
@@ -217,6 +252,7 @@ a:-webkit-any-link {
 #helheim {
     bottom: 46px;
     left: 40px;
+    transition: opacity 1.75s ease-out;
 }
 
 #helheim-banner img {
@@ -236,8 +272,8 @@ a:-webkit-any-link {
 }
 
 #ratatoskr {
-    bottom: 306px;
-    left: 145px;
+    bottom: 305px;
+    left: 150px;
 }
 
 #dragon-logo {
@@ -251,8 +287,9 @@ a:-webkit-any-link {
 }
 
 #compass-arrows {
-    bottom: 146px;
+    bottom: 147.5px;
     right: 138px;
+    transition: transform 1s ease-in-out;
 }
 
 @media screen and (max-width: 1350px) {

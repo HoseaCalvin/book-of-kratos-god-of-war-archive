@@ -24,22 +24,11 @@
     </div>
 
     <div class="first-content">
-        <div class="overview-photo" id="vanaheim-overview">
+        <div class="overview-wrapper">
+            <img class="overview-image" src="/assets/realms/vanaheim/vanaheim-overview.png" alt="Vanaheim Overview">
             <div class="overview-content">
                 <div class="overview-title">
                     <h2>The Nature's Gift</h2>
-                </div>
-                <hr>
-                <div class="overview-button">
-                    <button onclick="showPassage()">Learn More</button>
-                </div>
-                <div class="overview-text">
-                    <p id="text">
-                        A tapestry of the cosmology, conjured in the form of lush forests and greener bushes. <br>
-                        The haven of all living creatures, Vanaheim summons those who have a desire to prosper together with nature.
-                        Animals whisper their joy, the leaves dance in harmony, it is the impeccable habitat in the Nine Realms.
-                        Since eons ago, the Vanir have dedicated themselves to learn, foster, and ally with wildlife, their enigmatic key to prevail in wars against the Aesir.
-                    </p>
                 </div>
             </div>
         </div>
@@ -53,12 +42,17 @@
 
     <div class="tab-buttons-wrapper">
         <div class="tab">
-            <button class="tab-button" onclick="openGameTab(event, 'gowr')">God of War Ragnarök (2022)</button>
+            <button class="tab-button" onclick="openGameTab(event, 'gowr')">
+                <img src="/assets/logo/god-of-war-ragnarok-logo.png" alt="God of War Ragnarök">
+            </button>
         </div>
     </div>
+    
     <div class="tab-content-wrapper">
+        
         <div class="tab-content" id="gowr">
-            <div class="location">
+
+            <div class="location slide-in">
                 <div class="location-name">
                     <h4>The Southern Wilds</h4>
                 </div>
@@ -75,7 +69,8 @@
                     </div>
                 </div>
             </div>
-            <div class="location">
+
+            <div class="location slide-in">
                 <div class="location-name">
                     <h4>Freyr's Camp</h4>
                 </div>
@@ -92,7 +87,8 @@
                     </div>
                 </div>
             </div>
-            <div class="location">
+
+            <div class="location slide-in">
                 <div class="location-name">
                     <h4>Eastern Barri Woods</h4>
                 </div>
@@ -109,7 +105,8 @@
                     </div>
                 </div>
             </div>
-            <div class="location">
+
+            <div class="location slide-in">
                 <div class="location-name">
                     <h4>Western Barri Woods</h4>
                 </div>
@@ -126,7 +123,8 @@
                     </div>
                 </div>
             </div>
-            <div class="location">
+
+            <div class="location slide-in">
                 <div class="location-name">
                     <h4>The Northern Wilds</h4>
                 </div>
@@ -143,7 +141,8 @@
                     </div>
                 </div>
             </div>
-            <div class="location">
+
+            <div class="location slide-in">
                 <div class="location-name">
                     <h4>The Crater</h4>
                 </div>
@@ -161,9 +160,12 @@
                     </div>
                 </div>
             </div>
+
         </div>
+        
     </div>
 
     <script src="/realms/realm-article.js"></script>
+    <script src="/animation.js" defer></script>
 </body>
 </html>

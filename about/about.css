@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.content-wrapper {
+    margin: 8rem auto;
+    max-width: 1600px;
+}
+
+.disclaimer, .add-info {
+    margin: 3rem 5.5rem;
+}
+
+.disclaimer h1, .add-info h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+.disclaimer p, .add-info p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    padding: 10px;
+    font-size: 1.1rem;
+    line-height: 1.67rem;
+}
+
+.logo-preview {
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 4rem;
+}
+
+.logo-preview img {
+    width: 350px;
+    height: auto;
+    padding: 20px;
+    margin: 0 0.6rem;
+    background-color: rgb(246, 246, 246);
+    border-radius: 15px;
+}
+
+.line-separator {
+    margin: 0 6rem;
+}
+
+.border {
+    border: solid rgb(165, 165, 165);
+    padding: 1.7rem;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo-preview {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logo-preview img {
+        margin: 1rem auto;
+    }
+}

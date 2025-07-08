@@ -24,22 +24,11 @@
     </div>
 
     <div class="first-content">
-        <div class="overview-photo" id="asgard-overview">
+        <div class="overview-wrapper">
+            <img class="overview-image" src="/assets/realms/asgard/asgard-overview.jpg" alt="Asgard Overview">
             <div class="overview-content">
                 <div class="overview-title">
                     <h2>The Ethereal Fortress</h2>
-                </div>
-                <hr>
-                <div class="overview-button">
-                    <button onclick="showPassage()">Learn More</button>
-                </div>
-                <div class="overview-text">
-                    <p id="text">
-                        Asgard, known as Asgarðr in Old Norse, is the celestial realm of the Aesir, where the All-Father presides over the Nine Realms with unmatched authority.
-                        This divine kingdom is home to mighty gods such as Thor, Heimdall, and Baldur, each playing a crucial role in the cosmic order. <br>
-                        A realm of unparalleled splendor, Asgard is the embodiment of every mortal's dream, a land of verdant landscapes and eternal sunlight.
-                        Its architectural grandeur, a testament to divine craftsmanship, leaves even the most imaginative minds in awe.
-                    </p>
                 </div>
             </div>
         </div>
@@ -50,20 +39,26 @@
     <div class="location-header">
         <h3>Major Regions</h3>
     </div>
+
     <div class="tab-buttons-wrapper">
         <div class="tab">
-            <button class="tab-button" onclick="openGameTab(event, 'gowr')">God of War Ragnarök (2022)</button>
+            <button class="tab-button" onclick="openGameTab(event, 'gowr')">
+                <img src="/assets/logo/god-of-war-ragnarok-logo.png" alt="God of War Ragnarök">
+            </button>
         </div>
     </div>
+
     <div class="tab-content-wrapper">
+
         <div class="tab-content" id="gowr">
-            <div class="location">
+
+            <div class="location slide-in">
                 <div class="location-name">
                     <h4>Plains of Ida</h4>
                 </div>
                 <div class="location-content">
                     <div class="location-photo">
-                        <img src="/assets/realms/asgard/plains-of-ida.jpg" alt="Plains of Ida" loading="lazy">
+                        <img src="/assets/realms/asgard/plains-of-ida.png" alt="Plains of Ida" loading="lazy">
                     </div>
                     <div class="location-description">
                         <p>
@@ -74,7 +69,8 @@
                     </div>
                 </div>
             </div>
-            <div class="location">
+
+            <div class="location slide-in">
                 <div class="location-name">
                     <h4>Hrimthur's Wall</h4>
                 </div>
@@ -92,7 +88,8 @@
                    </div>
                 </div>
             </div>
-            <div class="location">
+
+            <div class="location slide-in">
                 <div class="location-name">
                     <h4>Glaðsheim</h4>
                 </div>
@@ -109,9 +106,12 @@
                     </div>
                 </div>
             </div>
+
         </div>
+        
     </div>
 
     <script src="/realms/realm-article.js"></script>
+    <script src="/animation.js" defer></script>
 </body>
 </html>
