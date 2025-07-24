@@ -169,6 +169,10 @@ body {
         overflow-x: hidden;
     }
 
+    .landing-page {
+         height: 60vh;
+    }
+
     .summary {
         padding: 7px;
     }
@@ -220,12 +224,16 @@ body {
 @media screen and (max-width: 426px) {
     .summary-title h4 {
         font-size: 2rem;
-        margin: 1rem;
+        margin: 0.5rem;
         padding: 5px;
     }
 
     .overview-content {
         margin: 0 0.3rem;
+    }
+
+    .overview-content img {
+        border-radius: 10px;
     }
 
     .content {
@@ -234,6 +242,7 @@ body {
 
     .overview-text {
         padding: 1.3rem;
+        border-radius: 10px;
     }
 
     .overview-title {
@@ -252,13 +261,17 @@ body {
 
     .summary-title h4 {
         font-size: 1.2rem;
-        margin: 0.6rem;
+        margin: 0.2rem;
         padding: 5px;
     }
 
     .content {
         margin: 2rem 1rem;
     }    
+
+    .overview-text {
+        padding: 1.1rem 1.3rem;
+    }
 
     .overview-title {
         font-size: 1.2rem;

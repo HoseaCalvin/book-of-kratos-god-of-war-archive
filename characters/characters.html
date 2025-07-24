@@ -138,13 +138,26 @@
         </div>
 
         <button class="next">&#10095</button>
-        
     </div>
-    
+
+    <div class="popup-overlay hidden">
+        <button class="popup-close">&times;</button>
+        <div class="popup">
+            <div class="popup-container">
+                <div class="popup-image"></div>
+
+                <div class="popup-information">
+                    <div class="popup-name"></div>
+                    <div class="popup-description"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
     <div id="footer"></div>
     <script src="/footer/footer.js"></script>
 
-    <script src="/characters/characters.js"></script>
+    <script src="/characters/characters.js" defer></script>
     <script src="/animation.js" defer></script>
 </body>
 </html>

@@ -271,7 +271,7 @@ body {
 
 .location-description p {
     font-size: 1.2rem;
-    line-height: 1.8rem;
+    line-height: 2.1rem;
     text-align: justify;
 }
 
@@ -416,10 +416,13 @@ body {
         left: 34vw;
     }
 
+    .overview-image {
+        border-radius: 15px;
+    }
+
     .overview-title h2 {
         font-size: 1.6rem;
     }
-
 }
 
 @media screen and (max-width: 560px) {
@@ -548,6 +551,7 @@ body {
 
     .location-description p {
         font-size: 0.9rem;
+        line-height: 1.4rem;
     }
 }
 
@@ -555,6 +559,10 @@ body {
     .realm-header {
         width: 260px;
         left: 43vw;
+    }
+
+    .overview-image {
+        border-radius: 10px;
     }
 
     .realm-logo img {
@@ -606,5 +614,6 @@ body {
 
     .location-description p {
         font-size: 0.7rem;
+        line-height: 1.2rem;
     }
 }

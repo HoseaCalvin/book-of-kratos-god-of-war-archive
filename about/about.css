@@ -13,10 +13,6 @@
     display: flex;
 }
 
-.content-spacer {
-    width: 1000px;
-}
-
 .my-drive, .disclaimer, .add-info {
     margin: 3rem 10rem;
     background: white;
@@ -42,26 +38,7 @@
     text-align: justify;
     padding: 22px;
     font-size: 1.1rem;
-    line-height: 1.75rem;
-}
-
-.logo-preview {
-    display: flex;
-    justify-content: center;
-    margin: 2.5rem 4rem;
-}
-
-.logo-preview img {
-    width: 350px;
-    height: auto;
-    padding: 20px;
-    margin: 0 0.6rem;
-    background-color: rgb(246, 246, 246);
-    border-radius: 15px;
-}
-
-.borderline {
-    margin: 0 6rem;
+    line-height: 1.8rem;
 }
 
 .border {
@@ -82,17 +59,52 @@
 }
 
 @media screen and (max-width: 768px) {
-    .logo-preview {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .logo-preview img {
-        margin: 1rem auto;
-    }
-
     .my-drive, .disclaimer, .add-info {
         margin: 1.5rem 4rem;
     }
+}
 
+@media screen and (max-width: 650px) {
+    .my-drive, .disclaimer, .add-info {
+        margin: 3rem 3rem;
+    }
+
+    .my-drive p, .disclaimer p, .add-info p {
+        font-size: 0.8rem;
+        line-height: 1.65rem;
+        padding: 15px;       
+    }
+
+    .my-drive h1, .disclaimer h1, .add-info h1 {
+        padding: 10px;
+        font-size: 1.8rem;
+    }
+
+    .border {
+        padding: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .content-wrapper {
+        margin: 6rem auto 5rem auto;
+        max-width: 1600px;
+    }
+
+    .my-drive p, .disclaimer p, .add-info p {
+        font-size: 0.77rem;
+        line-height: 1.4rem;
+        padding: 10px;       
+    }
+
+    .my-drive h1, .disclaimer h1, .add-info h1 {
+        padding: 5px;
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .my-drive, .disclaimer, .add-info {
+        margin: 1.5rem 2rem;
+    }
 }
