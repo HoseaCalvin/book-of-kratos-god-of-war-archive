@@ -8,7 +8,7 @@ Driven by my profound love for God of War games set in Norse mythology, I develo
 
 To ensure there are no critical issues such as usability and performance, I designed the website to be user-friendly and have a visual that reflects both God of War and Norse mythology aesthetics.
 
-In addition, this fan-made website focuses on gameplay overviews, deep lore behind each prominent character, and the grandeur and the brutality of the Nine Realms. I implemented an engaging quiz game to test users' knowledge of both games.
+In addition, this fan-made website focuses on gameplay overviews, deep lore behind each prominent character, and the grandeur and the brutality of the Nine Realms.
 
 ## 💻 Tech Stack
 
