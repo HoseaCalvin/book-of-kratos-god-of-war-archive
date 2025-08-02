@@ -25,11 +25,11 @@ body {
 }
 
 #realm-article {
-    background-image: url(/assets/realms/realm-travel-table-active.png);
+    background-image: url(/assets/realms/realm-travel-table-active.webp);
 }
 
 #character-article {
-    background-image: url(/assets/characters/kratos-and-baldur.png);
+    background-image: url(/assets/characters/kratos-and-baldur.webp);
 }
 
 .summary {

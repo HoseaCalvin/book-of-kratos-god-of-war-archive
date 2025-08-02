@@ -22,39 +22,39 @@ body {
 }
 
 #alfheim-background {
-    background-image: url(/assets/realms/alfheim/alfheim-cover.png);
+    background-image: url(/assets/realms/alfheim/alfheim-cover.webp);
 }
 
 #asgard-background {
-    background-image: url(/assets/realms/asgard/asgard-cover.jpg);
+    background-image: url(/assets/realms/asgard/asgard-cover.webp);
 }
 
 #jotunheim-background {
-    background-image: url(/assets/realms/jotunheim/jotunheim-cover.png);
+    background-image: url(/assets/realms/jotunheim/jotunheim-cover.webp);
 }
 
 #vanaheim-background {
-    background-image: url(/assets/realms/vanaheim/vanaheim-cover.png);
+    background-image: url(/assets/realms/vanaheim/vanaheim-cover.webp);
 }
 
 #midgard-background {
-    background-image: url(/assets/realms/midgard/midgard-cover.png);
+    background-image: url(/assets/realms/midgard/midgard-cover.webp);
 }
 
 #svartalfheim-background {
-    background-image: url(/assets/realms/svartalfheim/svartalfheim-cover.png);
+    background-image: url(/assets/realms/svartalfheim/svartalfheim-cover.webp);
 }
 
 #niflheim-background {
-    background-image: url(/assets/realms/niflheim/niflheim-cover.jpg);
+    background-image: url(/assets/realms/niflheim/niflheim-cover.webp);
 }
 
 #helheim-background {
-    background-image: url(/assets/realms/helheim/helheim-cover.png);
+    background-image: url(/assets/realms/helheim/helheim-cover.webp);
 }
 
 #muspelheim-background {
-    background-image: url(/assets/realms/muspelheim/muspelheim-cover.jpg);
+    background-image: url(/assets/realms/muspelheim/muspelheim-cover.webp);
 }
 
 .realm-header {

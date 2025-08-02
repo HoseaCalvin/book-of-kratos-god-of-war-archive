@@ -29,11 +29,11 @@ body {
 }
 
 #god-of-war-2018 {
-    background-image: url(/assets/home/god-of-war-cover.jpg);
+    background-image: url(/assets/home/god-of-war-cover.webp);
 }
 
 #god-of-war-ragnarok {
-    background-image: url(/assets/home/god-of-war-ragnarok-cover.jpg);
+    background-image: url(/assets/home/god-of-war-ragnarok-cover.webp);
 }
 
 .summary-content-wrapper {
@@ -260,11 +260,11 @@ img.showSlide {
     }
 
     #god-of-war-2018 {
-        background-image: url(/assets/home/god-of-war-cover-alt.jpg);
+        background-image: url(/assets/home/god-of-war-cover-alt.webp);
     }
     
     #god-of-war-ragnarok {
-        background-image: url(/assets/home/god-of-war-ragnarok-cover-alt.jpg);
+        background-image: url(/assets/home/god-of-war-ragnarok-cover-alt.webp);
     }
     
     .summary-spacer {
